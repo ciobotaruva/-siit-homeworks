@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Form Homework</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js" defer></script>
+  </head>
+  <body>
+    <div class="contact-message hide-msg">
+      <i class="fas fa-check-circle"></i>
+      <p class="contact-msg-css">
+        Thank you for contacting us, <span class="person-name"></span> !
+      </p>
+    </div>
+    <main>
+      <form action="">
+        <div class="person-name">
+          <input
+            class="required-js "
+            type="text"
+            name="first-name"
+            id="first-name"
+            placeholder="First Name"
+          />
+          <input
+            class="required-js input-name"
+            type="text"
+            name="last-name"
+            id="last-name"
+            placeholder="Last Name"
+          />
+        </div>
+        <div class="person-gender">
+          <p>Gender</p>
+          <label><input type="radio" name="gender" id="male" />M </label>
+          <label
+            ><input type="radio" name="gender" id="female" checked />F
+          </label>
+        </div>
+
+        <textarea
+          class="required-js"
+          name="text-area"
+          id=""
+          cols="30"
+          rows="10"
+        >
+Your message here...</textarea
+        >
+        <button class="sub-btn" type="submit">Submit</button>
+      </form>
+      <img src="peisaj.jpg" alt="Nice view of Fussen" />
+    </main>
+  </body>
+</html>
