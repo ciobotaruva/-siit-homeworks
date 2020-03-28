@@ -4,15 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Games List</title>
-    <script src="game.model.js" defer></script>
-    <script src="gameList.view.js" defer></script>
-
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.css">
+    <script src="weather.model.js" defer></script>
+    <script src="weather.view.js" defer></script>
 </head>
 
 <body>
-    <h1>Games List</h1>
-    <article class="js-games-list"></article>
+    <p>Temperature:
+        <span class="js-temp">Please chose an option</span>
+    </p>
+    <p>
+        <input type="radio" name="temperature" id="deg" value="deg">
+        <label for="deg">&#8451</label>
+        <input type="radio" name="temperature" id="fah" value="fah">
+        <label for="fah">&#8457</label>
+    </p>
 </body>
 
 </html>
